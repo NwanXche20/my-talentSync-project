@@ -4,7 +4,7 @@ import { FaStar, FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 export default function Testimonials() {
   return (
-    <div className="grid grid-cols-2 gap-20 relative">
+    <div className="w-[85%] mx-auto grid grid-cols-2 gap-20 relative">
       <div className="space-y-10">
         <div className="flex justify-center items-center w-max">
           <Image src={IMAGES.partners.shopify} alt="company logo" />
@@ -36,13 +36,7 @@ export default function Testimonials() {
       </div>
 
       <div className="flex justify-center items-center">
-        <Image
-          src={IMAGES.testimonials.mainImage}
-          alt="grid of people"
-          // height={30}
-          // width={175}
-          // className="max-h-[430px]"
-        />
+        <Image src={IMAGES.testimonials.mainImage} alt="testimonial" />
       </div>
 
       <div className="absolute bottom-0 left-[45%] w-max flex justify-between items-center gap-5 ">

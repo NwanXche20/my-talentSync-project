@@ -46,7 +46,7 @@ function Reasons({ reason }) {
 
 export default function WhyChooseUs() {
   return (
-    <div className="flex flex-col justify-between gap-12">
+    <div className="w-[85%] mx-auto flex flex-col justify-between gap-12">
       <div className="max-w-[600px] space-y-3">
         <p className="text-[var(--blue-700)] font-semibold text-sm">
           The ClearLink Advantage
@@ -75,8 +75,6 @@ export default function WhyChooseUs() {
           <Image
             src={IMAGES.whyChooseUs.mainImage}
             alt="grid of people"
-            // height={30}
-            // width={175}
             className="max-h-[430px]"
           />
         </div>

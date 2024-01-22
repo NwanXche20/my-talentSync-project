@@ -24,10 +24,11 @@ export default function Home() {
       style={{
         backgroundImage:
           "url(https://ivy-clearlink.netlify.app/assets/backgroundpattern-c0621009.png)",
-        backgroundSize: "cover",
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="w-[85%] mx-auto">
+      <div className="">
         <Navbar />
 
         <div className="grid grid-cols-1 gap-44 my-20">
@@ -35,6 +36,8 @@ export default function Home() {
           <Partners />
           <WhyChooseUs />
           <Testimonials />
+          <FAQ />
+          <CTA />
         </div>
       </div>
 

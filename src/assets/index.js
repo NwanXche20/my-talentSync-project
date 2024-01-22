@@ -26,6 +26,13 @@ const IMAGES = {
     avatar: require("./testimonials/avatar.png"),
     mainImage: require("./testimonials/main-image.png"),
   },
+  faq: {
+    minus: require("./faq/minus-circle.png"),
+    plus: require("./faq/plus-circle.png"),
+  },
+  cta: {
+    mainImage: require("./cta/main-image.png"),
+  },
 };
 
 export default IMAGES;

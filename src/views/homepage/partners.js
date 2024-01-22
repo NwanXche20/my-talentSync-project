@@ -5,7 +5,7 @@ const logos = IMAGES.partners;
 
 export default function Partners() {
   return (
-    <div className="text-center space-y-10">
+    <div className="w-[85%] mx-auto text-center space-y-10">
       <p className="text-xl font-medium text-[var(--gray-600)]">
         Join 1,500+ companies already video conferencing the ClearLink way
       </p>
