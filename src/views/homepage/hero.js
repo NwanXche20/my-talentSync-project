@@ -29,33 +29,33 @@ const icons = [
 const avatars = [
   {
     img: IMAGES.hero.heroGrid.image1,
-    bg: "[var(--orange-dark-300)]",
+    bg: "--orange-dark-300",
   },
   {
     img: IMAGES.hero.heroGrid.image2,
-    bg: "[var(--primary-300)]",
+    bg: "--primary-300",
   },
   {
     img: IMAGES.hero.heroGrid.image3,
-    bg: "[var(--moss-300)]",
+    bg: "--moss-300",
   },
   {
     img: IMAGES.hero.heroGrid.image4,
-    bg: "[var(--gray-blue-300)]",
+    bg: "--gray-blue-300",
   },
   {
     img: IMAGES.hero.heroGrid.image5,
-    bg: "[var(--warning-300)]",
+    bg: "--warning-300",
   },
   {
     img: IMAGES.hero.heroGrid.image6,
-    bg: "[var(--ros-300)]",
+    bg: "--ros-300",
   },
 ];
 
 export default function Hero() {
   return (
-    <div className="w-[90%] md:w-[85%] mx-auto flex flex-col-reverse md:flex-row justify-between md:items-center xl:items-stretch gap-10 md:gap-16">
+    <div className="w-[90%] mw-[85%] mx-auto flex flex-col-reverse md:flex-row justify-between md:items-center xl:items-stretch gap-10 md:gap-16">
       <div className="flex flex-col justify-between gap-6 w-full">
         <div>
           <h1 className="text-4xl lg:text-5xl xl:text-[64px] xl:leading-[72px] font-medium text-[var(--gray-800)] tracking-[-1.28px]">
@@ -107,7 +107,7 @@ export default function Hero() {
             return (
               <div
                 key={index}
-                className={`flex justify-center items-center rounded-[10px] bg-${avatar.bg} bg-no-repeat bg-contain bg-center`}
+                className={`flex justify-center items-center rounded-[10px] bg-[var(${avatar.bg})] bg-no-repeat bg-contain bg-center`}
               >
                 <Image src={avatar.img} alt={`AI-avatar-${index + 1}`} />
               </div>
