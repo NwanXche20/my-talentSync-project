@@ -19,19 +19,21 @@ const features = [
 
 function GetFeature({ feature }) {
   return (
-    <div className="flex items-center gap-2 text-[var(--blue-700)]">
-      <FaRegCircleCheck />
+    <div className="flex items-start gap-3 text-[var(--blue-700)]">
+      <FaRegCircleCheck className="mt-1" />
 
-      <p className="text-[var(--gray-500)] text-2xl">{feature.item}</p>
+      <p className="text-[var(--gray-500)] text-xl lg:text-2xl">
+        {feature.item}
+      </p>
     </div>
   );
 }
 
 export default function CTA() {
   return (
-    <div className="w-[92%] ml-auto grid grid-cols-2 gap-10">
+    <div className="w-[90%] mx-auto md:mx-0 md:w-[92%] md:ml-auto grid grid-cols-1 md:grid-cols-2 gap-10">
       <div className="space-y-10">
-        <h2 className="font-semibold text-5xl">
+        <h2 className="font-semibold text-4xl lg:text-5xl white">
           Ready to clear the path to perfect communication?
         </h2>
         <div className="px-4 space-y-6">

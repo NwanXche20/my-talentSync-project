@@ -3,15 +3,13 @@ import Image from "next/image";
 import { HiOutlineVideoCamera } from "react-icons/hi";
 import { BsSoundwave } from "react-icons/bs";
 import { CiCalendar } from "react-icons/ci";
-import { IoCalendarClearOutline } from "react-icons/io5";
-import { MdOutlineCalendarToday } from "react-icons/md";
 import { LiaUnlockAltSolid } from "react-icons/lia";
 
 const reasonsItems = [
   {
     icon: <HiOutlineVideoCamera />,
     title: "Crystal-clear HD video",
-    desc: "No more pixelation or blurriness – just stunning, lifelike clarity that brings your team closer in meetings.",
+    desc: "No more pixelation or blurriness - just stunning, lifelike clarity that brings your team closer in meetings.",
   },
   {
     icon: <BsSoundwave />,
@@ -33,7 +31,7 @@ const reasonsItems = [
 function Reasons({ reason }) {
   return (
     <div className="space-y-2">
-      <div className="mb-7 border border-[var(--gray-200)] rounded-full w-10 h-10 bg-white text-[var(--blue-700)] text-xl flex items-center justify-center cursor-pointer">
+      <div className="mb-4 md:mb-7 border border-[var(--gray-200)] rounded-full w-10 h-10 bg-white text-[var(--blue-700)] text-xl flex items-center justify-center cursor-pointer">
         {reason.icon}
       </div>
 
@@ -46,7 +44,7 @@ function Reasons({ reason }) {
 
 export default function WhyChooseUs() {
   return (
-    <div className="w-[85%] mx-auto flex flex-col justify-between gap-12">
+    <div className="w-[90%] md:w-[85%] mx-auto flex flex-col justify-between gap-12">
       <div className="max-w-[600px] space-y-3">
         <p className="text-[var(--blue-700)] font-semibold text-sm">
           The ClearLink Advantage
@@ -59,13 +57,13 @@ export default function WhyChooseUs() {
       </div>
 
       <div className="flex justify-between items-stretch gap-24">
-        <div className="grid grid-cols-2 gap-x-10 gap-y-5 place-content-between">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 md:gap-y-5 place-content-between">
           {reasonsItems.map((item, index) => {
             return <Reasons reason={item} key={index} />;
           })}
         </div>
 
-        <div className="flex justify-center items-center relative w-full">
+        <div className="hidden lg:flex justify-center items-center relative w-full">
           <Image
             src={IMAGES.whyChooseUs.arrow}
             alt="arrow"
@@ -75,7 +73,7 @@ export default function WhyChooseUs() {
           <Image
             src={IMAGES.whyChooseUs.mainImage}
             alt="grid of people"
-            className="max-h-[430px]"
+            className="max-h-[430px] object-contain"
           />
         </div>
       </div>

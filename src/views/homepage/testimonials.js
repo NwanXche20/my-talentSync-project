@@ -4,8 +4,8 @@ import { FaStar, FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 export default function Testimonials() {
   return (
-    <div className="w-[85%] mx-auto grid grid-cols-2 gap-20 relative">
-      <div className="space-y-10">
+    <div className="w-[90%] md:w-[85%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 relative">
+      <div className="space-y-6 md:space-y-8 lg:space-y-10 mb-12 md:mb-8">
         <div className="flex justify-center items-center w-max">
           <Image src={IMAGES.partners.shopify} alt="company logo" />
         </div>
@@ -18,7 +18,7 @@ export default function Testimonials() {
           <FaStar />
         </div>
 
-        <h2 className="font-medium text-4xl leading-[50px]">
+        <h2 className="font-medium text-2xl md:text-4xl md:leading-[50px]">
           ClearLink has upgraded our remote meetings. High-quality video, screen
           sharing, and top-notch security make it essential for our team.
         </h2>
@@ -35,7 +35,7 @@ export default function Testimonials() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="hidden lg:flex justify-center items-center">
         <Image src={IMAGES.testimonials.mainImage} alt="testimonial" />
       </div>
 

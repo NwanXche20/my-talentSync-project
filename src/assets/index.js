@@ -33,6 +33,10 @@ const IMAGES = {
   cta: {
     mainImage: require("./cta/main-image.png"),
   },
+  footer: {
+    appleStore: require("./footer/apple-store.png"),
+    googlePlay: require("./footer/google-play.png"),
+  },
 };
 
 export default IMAGES;

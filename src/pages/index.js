@@ -31,7 +31,7 @@ export default function Home() {
       <div className="">
         <Navbar />
 
-        <div className="grid grid-cols-1 gap-44 my-20">
+        <div className="grid grid-cols-1 gap-24 lg:gap-36 my-10 md:my-20">
           <Hero />
           <Partners />
           <WhyChooseUs />
