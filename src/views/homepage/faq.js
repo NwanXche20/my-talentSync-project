@@ -26,8 +26,8 @@ export default function FAQ() {
         <p className="text-[var(--blue-700)] font-semibold text-sm">Support</p>
         <h2 className="font-semibold text-4xl lg:text-5xl">FAQs</h2>
         <p className="text-[var(--gray-500)] text-lg lg:text-2xl">
-          Everything you need to know about the product and billing. Can't find
-          the answer you're looking for? Please{" "}
+          Everything you need to know about the product and billing. Can&apos;t
+          find the answer you&apos;re looking for? Please{" "}
           <span>chat to our friendly team</span>.
         </p>
       </div>

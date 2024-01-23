@@ -13,7 +13,10 @@ export default function Partners() {
       <div className="flex justify-evenly items-center flex-wrap gap-3">
         {Object.values(logos).map((logo, index) => {
           return (
-            <div className="flex justify-center items-center md:flex-1 h-11 w-20 md:w-full">
+            <div
+              key={index}
+              className="flex justify-center items-center md:flex-1 h-11 w-20 md:w-full"
+            >
               <Image
                 src={logo}
                 alt={`logo-${index + 1}`}
