@@ -60,7 +60,10 @@ export default function FAQ() {
 
         {questions.map((question, index) => {
           return (
-            <div className="p-4 lg:p-8 border-b border-[var(--gray-200)] flex justify-between items-start gap-4">
+            <div
+              key={index}
+              className="p-4 lg:p-8 border-b border-[var(--gray-200)] flex justify-between items-start gap-4"
+            >
               <div>
                 <h4 className="font-semibold">{question.ques}</h4>
               </div>
