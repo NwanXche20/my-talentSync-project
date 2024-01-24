@@ -20,7 +20,7 @@ const roboto = Roboto({
 export default function Home() {
   return (
     <main
-      className={`min-h-screen ${inter.className}`}
+      className={`min-h-screen ${inter.className} max-w-[1500px] mx-auto`}
       style={{
         backgroundImage:
           "url(https://ivy-clearlink.netlify.app/assets/backgroundpattern-c0621009.png)",
