@@ -140,7 +140,7 @@ function Sitemaps({ items }) {
 
 function FooterTop() {
   return (
-    <div className="py-12 flex flex-col lg:flex-row justify-between gap-10 lg:gap-4 xl:gap-20">
+    <div className="w-[90%] md:w-[85%] mx-auto py-12 flex flex-col lg:flex-row justify-between gap-10 lg:gap-4 xl:gap-20">
       <div className="space-y-3 md:space-y-4 xl:space-y-6 lg:w-4/5">
         <div className="flex justify-around items-center gap-[10px] w-max">
           <svg
@@ -213,21 +213,25 @@ const socialLinks = [
 
 function FooterBottom() {
   return (
-    <div className="py-12 flex flex-col-reverse md:flex-row justify-between items-center gap-8">
-      <p>&copy; 2023 ClearLink. All rights reserved.</p>
+    <div className="bg-[var(--gray-50)]">
+      <div className="w-[90%] md:w-[85%] mx-auto py-12 flex flex-col-reverse md:flex-row justify-between items-center gap-8">
+        <p>&copy; 2023 ClearLink. All rights reserved.</p>
 
-      <div className="w-max flex justify-between items-center gap-4">
-        {socialLinks.map((link, index) => {
-          return (
-            <Link
-              key={index}
-              onClick={(e) => e.preventDefault()}
-              href={link.url}
-            >
-              <div className="text-[var(--gray-400)] text-2xl">{link.icon}</div>
-            </Link>
-          );
-        })}
+        <div className="w-max flex justify-between items-center gap-4">
+          {socialLinks.map((link, index) => {
+            return (
+              <Link
+                key={index}
+                onClick={(e) => e.preventDefault()}
+                href={link.url}
+              >
+                <div className="text-[var(--gray-400)] text-2xl">
+                  {link.icon}
+                </div>
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
@@ -236,11 +240,9 @@ function FooterBottom() {
 export default function Footer() {
   return (
     <div className=" min-h-40">
-      <div className="w-[90%] md:w-[85%] mx-auto">
-        <FooterTop />
+      <FooterTop />
 
-        <FooterBottom />
-      </div>
+      <FooterBottom />
     </div>
   );
 }
