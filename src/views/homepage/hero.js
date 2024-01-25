@@ -55,7 +55,7 @@ const avatars = [
 
 export default function Hero() {
   return (
-    <div className="w-[90%] md:w-[85%] mx-auto flex flex-col-reverse md:flex-row justify-between md:items-center xl:items-stretch gap-10 md:gap-16">
+    <div className="w-[90%] md:w-[85%] mx-auto flex flex-col-reverse md:flex-row justify-between md:items-center gap-10 md:gap-16">
       <div className="flex flex-col justify-between gap-6 w-full">
         <div>
           <h1 className="text-4xl lg:text-5xl xl:text-[64px] xl:leading-[72px] font-medium text-[var(--gray-800)] tracking-[-1.28px]">
@@ -68,11 +68,11 @@ export default function Hero() {
         </div>
 
         <div className="flex items-center gap-4 lg:gap-6 w-full md:w-fit">
-          <button className="outline-0 text-sm lg:text-base py-2 px-4 md:py-3 md:px-7 font-semibold text-white bg-[var(--blue-700)] rounded-[100px] shadow-[0 1px 2px #1018280d] cursor-pointer">
+          <button className="outline-0 text-sm xl:text-base py-2 px-4 md:py-3 md:px-7 font-semibold text-white bg-[var(--blue-700)] rounded-[100px] shadow-[0 1px 2px #1018280d] cursor-pointer">
             Start your free trial
           </button>
 
-          <button className="outline-0 text-sm lg:text-base font-semibold text-[var(--blue-700)] cursor-pointer flex justify-center items-center gap-1 lg:gap-3">
+          <button className="outline-0 text-sm xl:text-base font-semibold text-[var(--blue-700)] cursor-pointer flex justify-center items-center gap-1 xl:gap-3">
             <FaRobot className="text-2xl" />
             Discover AI assistant
           </button>
@@ -101,7 +101,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="w-full md:w-3/5 border border-[var(--blue-200)] bg-[var(--blue-50)] rounded-2xl p-4 md:p-8 flex flex-col gap-4 justify-center items-center shadow-[0 7px 20px -4px #10182824] ">
+      <div className="w-full md:w-3/5 lg:w-[70%] border border-[var(--blue-200)] bg-[var(--blue-50)] rounded-2xl p-4 md:p-8 flex flex-col gap-4 justify-center items-center shadow-[0 7px 20px -4px #10182824] ">
         <div className="grid grid-cols-3 gap-1 md:gap-3 h-full">
           {avatars.map((avatar, index) => {
             return (
