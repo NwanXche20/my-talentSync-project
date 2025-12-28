@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="hidden lg:block w-[85%] mx-auto">
+      <nav className="hidden lg:block w-[85%] mx-auto sticky top-0 bg-white z-50">
         <div className="py-8">
           <div className="flex justify-between items-center gap-4 bg-[var(--gray-100)] border border-[var(--gray-300)] rounded-[100px] py-[10px] px-6">
             <div className="flex justify-around items-center gap-[10px] w-max">
@@ -82,7 +82,7 @@ export default function Navbar() {
         </button>
       </nav> */}
 
-      <nav className="w-[90%] mx-auto relative lg:hidden ">
+      <nav className="w-[90%] mx-auto sticky top-0 bg-white z-50 lg:hidden ">
         <div className="py-8">
           <div className="flex justify-between items-center gap-4 bg-[var(--gray-100)] border border-[var(--gray-300)] rounded-[100px] py-[10px] px-6">
             <div className="flex justify-around items-center gap-[10px] w-max">
@@ -130,30 +130,30 @@ export default function Navbar() {
             </button>
           </div> */}
           </div>
+
+          <div
+            className={`${
+              showNav ? "visible h-auto relative " : "hidden h-0 absolute"
+            } space-y-6 md:space-y-6 bg-[var(--gray-100)] w-[90%] mx-auto mt-4 rounded-[20px] text-center drop-shadow-[0px 4px 15px rgb(138, 138, 138)] p-6 transition-all ease-in-out duration-700`}
+          >
+            <ul className="space-y-4 md:space-y-6">
+              <ListItem arrow="true">product</ListItem>
+              <ListItem arrow="true">solutions</ListItem>
+              <ListItem arrow="true">resources</ListItem>
+              <ListItem>pricing</ListItem>
+            </ul>
+
+            <div className="flex justify-between items-center gap-2 xl:gap-3 w-max">
+              <button className="outline-0 py-2 px-4 xl:py-3 xl:px-6 text-sm font-medium bg-white rounded-[100px] border border-[var(--gray-400)] shadow-[0 1px 2px #1018280d] cursor-pointer">
+                Talk to Sales
+              </button>
+              <button className="outline-0 py-2 px-4 xl:py-3 xl:px-6 text-sm font-medium text-white bg-[var(--blue-700)] rounded-[100px] shadow-[0 1px 2px #1018280d] cursor-pointer">
+                Sign up for Free
+              </button>
+            </div>
+          </div>
         </div>
       </nav>
-
-      <div
-        className={`${
-          showNav ? "visible h-auto relative " : "hidden h-0 absolute"
-        } space-y-6 md:space-y-6 bg-[var(--gray-100)] w-[90%] mx-auto -mt-6 mb-10 rounded-[20px] text-center drop-shadow-[0px 4px 15px rgb(138, 138, 138)] p-6 transition-all ease-in-out duration-700`}
-      >
-        <ul className="space-y-4 md:space-y-6">
-          <ListItem arrow="true">product</ListItem>
-          <ListItem arrow="true">solutions</ListItem>
-          <ListItem arrow="true">resources</ListItem>
-          <ListItem>pricing</ListItem>
-        </ul>
-
-        <div className="flex justify-between items-center gap-2 xl:gap-3 w-max">
-          <button className="outline-0 py-2 px-4 xl:py-3 xl:px-6 text-sm font-medium bg-white rounded-[100px] border border-[var(--gray-400)] shadow-[0 1px 2px #1018280d] cursor-pointer">
-            Talk to Sales
-          </button>
-          <button className="outline-0 py-2 px-4 xl:py-3 xl:px-6 text-sm font-medium text-white bg-[var(--blue-700)] rounded-[100px] shadow-[0 1px 2px #1018280d] cursor-pointer">
-            Sign up for Free
-          </button>
-        </div>
-      </div>
     </>
   );
 }
